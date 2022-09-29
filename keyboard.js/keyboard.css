@@ -1,0 +1,80 @@
+.keyboard{
+    background-color: #273;
+    width: 100%;
+    padding: 4px;
+    margin: 0;
+    position: fixed;
+    transition: bottom 500ms;
+    bottom: 0;
+    text-align: center;
+    user-select: none;
+}
+.keyboard.visibility{
+    bottom: -100%;
+}
+.key{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    max-width: 50px;
+    width: 12%;
+    vertical-align: middle;
+    display: inline-flex;
+    height: 40px;
+    margin: 3px;
+    border-radius: 4px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.key:active{
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.meduim{
+    width: 24%;
+    max-width: 150px;
+}
+.small{
+    width: 16%;
+    max-width: 90px;
+}
+.large{
+    width: 50%;
+    max-width: 500px;
+}
+.key--activatable::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.key--active::after{
+    background-color: green;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+@media (max-width: 730px) {
+    .key{
+        width: 5%;
+    }
+    .meduim{
+        width: 15%;
+    }
+    .small{
+        width: 10%;
+    }
+    .large{
+        width: 100%;
+    }
+}

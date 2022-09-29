@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: #264;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.feature{
+    width: 100%;
+    font-size: 30px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-around;
+}
+.feature span{
+    color: #264;
+}
+.feature .textbox{
+    resize: none;
+    width: 500px;
+    outline: none;
+    height: 60px;
+    font-size: 15px;
+    text-align: left;
+    margin-top: 10vh;
+    align-self: start;
+    border: 1px solid #264;
+}
